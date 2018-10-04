@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="array,data structure,课程笔记," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="hello,it’s my second post">
+<meta name="description" content="为什么很多编程语言中数组都从0开始编号一. 课程主要内容 数组（Array）的定义：是一种线性表数据结构。它用一组连续的内存空间，来存储一组具有相同类型的数据。  连续的内存空间和相同类型的数据，使得数组能够实现随机访问，但为了保证连续性，要在数组中删除、插入一个数据时需要大量搬移数据 计算机是通过地址来访问内存中的数据。数组中某元素存储的内存地址公式为： a[i]_address=base_ad">
+<meta name="keywords" content="array,data structure,课程笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="second-post">
-<meta property="og:url" content="http://yoursite.com/2018/10/04/second-post/index.html">
+<meta property="og:title" content="极客时间 课程笔记之数组">
+<meta property="og:url" content="http://yoursite.com/2018/10/04/lessonNotes-Array/index.html">
 <meta property="og:site_name" content="胖达荣荣来也">
-<meta property="og:description" content="hello,it’s my second post">
+<meta property="og:description" content="为什么很多编程语言中数组都从0开始编号一. 课程主要内容 数组（Array）的定义：是一种线性表数据结构。它用一组连续的内存空间，来存储一组具有相同类型的数据。  连续的内存空间和相同类型的数据，使得数组能够实现随机访问，但为了保证连续性，要在数组中删除、插入一个数据时需要大量搬移数据 计算机是通过地址来访问内存中的数据。数组中某元素存储的内存地址公式为： a[i]_address=base_ad">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-04T04:49:13.104Z">
+<meta property="og:updated_time" content="2018-10-04T14:43:58.378Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="second-post">
-<meta name="twitter:description" content="hello,it’s my second post">
+<meta name="twitter:title" content="极客时间 课程笔记之数组">
+<meta name="twitter:description" content="为什么很多编程语言中数组都从0开始编号一. 课程主要内容 数组（Array）的定义：是一种线性表数据结构。它用一组连续的内存空间，来存储一组具有相同类型的数据。  连续的内存空间和相同类型的数据，使得数组能够实现随机访问，但为了保证连续性，要在数组中删除、插入一个数据时需要大量搬移数据 计算机是通过地址来访问内存中的数据。数组中某元素存储的内存地址公式为： a[i]_address=base_ad">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/04/second-post/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/04/lessonNotes-Array/"/>
 
 
 
 
 
-  <title>second-post | 胖达荣荣来也</title>
+  <title>极客时间 课程笔记之数组 | 胖达荣荣来也</title>
   
 
 
@@ -262,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/04/second-post/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/04/lessonNotes-Array/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="pandaRongrong">
@@ -279,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">second-post</h1>
+          <h1 class="post-title" itemprop="name headline">极客时间 课程笔记之数组</h1>
         
 
         <div class="post-meta">
@@ -291,7 +292,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-04T12:48:29+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-04T19:48:05+08:00">
                 2018-10-04
               </time>
             
@@ -301,6 +302,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构与算法分析/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构与算法分析</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -329,7 +352,85 @@
       
 
       
-        <h3 id="hello-it’s-my-second-post"><a href="#hello-it’s-my-second-post" class="headerlink" title="hello,it’s my second post"></a>hello,it’s my second post</h3>
+        <h2 id="为什么很多编程语言中数组都从0开始编号"><a href="#为什么很多编程语言中数组都从0开始编号" class="headerlink" title="为什么很多编程语言中数组都从0开始编号"></a>为什么很多编程语言中数组都从0开始编号</h2><h3 id="一-课程主要内容"><a href="#一-课程主要内容" class="headerlink" title="一. 课程主要内容"></a>一. 课程主要内容</h3><ol>
+<li><p>数组（Array）的定义：是一种<strong>线性表</strong>数据结构。它用一组<strong>连续的内存空间</strong>，来存储一组具有<strong>相同类型</strong>的数据。</p>
+<ul>
+<li>连续的内存空间和相同类型的数据，使得数组能够实现<strong>随机访问</strong>，但为了保证连续性，要在数组中删除、插入一个数据时需要大量搬移数据</li>
+<li><p><strong>计算机是通过地址来访问内存中的数据</strong>。数组中某元素存储的内存地址公式为：</p>
+<pre><code>a[i]_address=base_address+i*data_type_size
+</code></pre></li>
+<li><p>数组适合查找操作，但即使是排序好的数组，用二分查找，时间复杂度也是O（logn）,<strong>数组根据下标随机访问时间复杂度为O(1)</strong></p>
+</li>
+</ul>
+</li>
+<li>数组的插入操作<ul>
+<li>若数组中的数据有序，则将一个数据插入长度为n数组的第k个位置，最坏时间复杂度为O(n),平均情况时间复杂度为（1+2+…+n）/n=O(n)</li>
+<li><strong>若数组中的数据无序,为了避免大规模的数据搬移，直接将第k位的数据搬移到数组元素的最后，把新的元素直接放入第k位置</strong></li>
+</ul>
+</li>
+<li>数组的删除操作<ul>
+<li>一般情况时间复杂度分析同插入操作，<strong>当我们并不一定非得追求数组中数据的连续性时，每次的删除操作并不是真正搬移数据，只是记录数据已经被删除，当数组没有更多空间存储数据时，我们再触发执行一次真正的删除操作（JVM标记清除垃圾回收算法的核心算法）</strong></li>
+</ul>
+</li>
+<li>数组越界<ul>
+<li>数组越界在C语言中没有规定数组访问越界时编译器应该如何处理，因为<strong>访问数组的本质就是访问一段连续内存</strong>，只要数组通过偏移计算得到的内存地址是可用的，那么程序就可能不会保任何错误</li>
+</ul>
+</li>
+<li>容器与数组<ul>
+<li>容器的优势：可以将很多数组操作的细节封装起来，支持动态扩容，数组本身在定义的时候需要预先指定大小</li>
+<li>当数据大小事先知道，对数据操作非常简单，可以考虑用数组；当表示多维数组时，用数组会更加直观</li>
+<li><strong>对于业务开发，直接使用容器，如果做非常底层的开发，数组优于容器</strong></li>
+</ul>
+</li>
+</ol>
+<ol start="6">
+<li><p>为什么大多数编程语言，数组要从0开始编写</p>
+<ul>
+<li><p>“下标”最确切的定义为“偏移”，如果数组从1开始计数，计算数组元素a[k]的内存地址变为：</p>
+<pre><code>a[k]_address=base_address+(k-1)*data_type_size
+</code></pre><p><strong>我们会发现后一个公式多了一次减法运算，对于CPU来说，就是多了一次减法指令，对于二维数组的寻址公式，下标为0优势更明显</strong></p>
+</li>
+<li>历史原因</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-课后思考题"><a href="#二-课后思考题" class="headerlink" title="二. 课后思考题"></a>二. 课后思考题</h3><ol start="7">
+<li><p>课程思考题（课后同学留言讨论）</p>
+<ol>
+<li>对JVM的标记清除垃圾回收算法的理解<blockquote>
+<p>杰杰：大多数主流虚拟机采用可达性分析算法来判断对象是否存活，在标记阶段，会遍历所有 GC ROOTS，将所有 GC ROOTS 可达的对象标记为存活。只有当标记工作完成后，清理工作才会开始。<br>不足：1.效率问题。标记和清理效率都不高，但是当知道只有少量垃圾产生时会很高效。2.空间问题。会产生不连续的内存空间碎片。</p>
+</blockquote>
+</li>
+<li><p>二位数组a[m][n]的内存寻址公式</p>
+<pre><code>a[i][j]_address=base_address+ (i*n+j)*data_type_size
+</code></pre></li>
+</ol>
+</li>
+<li><p>课后讨论问题</p>
+<ol>
+<li><p>对于下述代码，当数组越界时会导致无限循环</p>
+<pre><code>int main(int argc, char* argv[])
+{
+  int i = 0;
+  int arr[3] = {0};
+  for(; i&lt;=3; i++){
+    arr[i] = 0;
+    printf(&quot;hello world\n&quot;);
+  }
+return 0;
+}
+</code></pre><blockquote>
+<p>slvher: 函数体内的局部变量存在栈上，且是连续压栈。在Linux进程的内存布局中，栈区在高地址空间，从高向低增长。变量i和arr在相邻地址，且i比arr的地址大，所以arr越界正好访问到i。当然，前提是i和arr元素同类型，否则那段代码仍是未决行为.</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<p>参考：</p>
+<ol>
+<li><a href="https://time.geekbang.org/column/article/40961" target="_blank" rel="noopener">极客时间 &lt;&lt;数据结构与算法之美&gt;&gt; 王争</a></li>
+</ol>
+
       
     </div>
     
@@ -344,6 +445,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/array/" rel="tag"><i class="fa fa-tag"></i> array</a>
+          
+            <a href="/tags/data-structure/" rel="tag"><i class="fa fa-tag"></i> data structure</a>
+          
+            <a href="/tags/课程笔记/" rel="tag"><i class="fa fa-tag"></i> 课程笔记</a>
+          
+        </div>
+      
 
       
       
@@ -353,8 +464,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/04/first-post/" rel="next" title="first-post">
-                <i class="fa fa-chevron-left"></i> first-post
+              <a href="/2018/10/04/the-third-post/" rel="next" title="the third post">
+                <i class="fa fa-chevron-left"></i> the third post
               </a>
             
           </div>
@@ -362,10 +473,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/04/the-third-post/" rel="prev" title="the third post">
-                the third post <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -506,7 +613,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#hello-it’s-my-second-post"><span class="nav-number">1.</span> <span class="nav-text">hello,it’s my second post</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么很多编程语言中数组都从0开始编号"><span class="nav-number">1.</span> <span class="nav-text">为什么很多编程语言中数组都从0开始编号</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-课程主要内容"><span class="nav-number">1.1.</span> <span class="nav-text">一. 课程主要内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二-课后思考题"><span class="nav-number">1.2.</span> <span class="nav-text">二. 课后思考题</span></a></li></ol></li></ol></div>
             
 
           </div>
