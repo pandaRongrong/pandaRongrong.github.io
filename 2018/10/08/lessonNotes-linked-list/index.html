@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="array,data structure,课程笔记," />
+  <meta name="keywords" content="linkedList,data structure，极客时间," />
 
 
 
@@ -79,21 +79,20 @@
 
 
 
-<meta name="description" content="数组作为最简单的数据结构，其在计算机中是使用连续的一段内存进行存储数据，根据下标随机访问元素非常方便，但为了保持保证连续性，删除、插入操作需要大量搬移数据，时间复杂度较高">
-<meta name="keywords" content="array,data structure,课程笔记">
+<meta name="description" content="数据结构">
+<meta name="keywords" content="linkedList,data structure，极客时间">
 <meta property="og:type" content="article">
-<meta property="og:title" content="极客时间 课程笔记之数组">
-<meta property="og:url" content="http://yoursite.com/2018/10/07/lessonNotes-Array/index.html">
+<meta property="og:title" content="lessonNotes linked list">
+<meta property="og:url" content="http://yoursite.com/2018/10/08/lessonNotes-linked-list/index.html">
 <meta property="og:site_name" content="胖达荣荣来也">
-<meta property="og:description" content="数组作为最简单的数据结构，其在计算机中是使用连续的一段内存进行存储数据，根据下标随机访问元素非常方便，但为了保持保证连续性，删除、插入操作需要大量搬移数据，时间复杂度较高">
+<meta property="og:description" content="数据结构">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://github.com/pandaRongrong/myblog_images/raw/master/array.jpg">
-<meta property="og:image" content="https://github.com/pandaRongrong/myblog_images/raw/master/array.jpg">
-<meta property="og:updated_time" content="2018-10-07T07:43:18.237Z">
+<meta property="og:image" content="http://pg3xi71cb.bkt.clouddn.com/linkedlist.jpg">
+<meta property="og:updated_time" content="2018-10-08T11:11:28.663Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="极客时间 课程笔记之数组">
-<meta name="twitter:description" content="数组作为最简单的数据结构，其在计算机中是使用连续的一段内存进行存储数据，根据下标随机访问元素非常方便，但为了保持保证连续性，删除、插入操作需要大量搬移数据，时间复杂度较高">
-<meta name="twitter:image" content="https://github.com/pandaRongrong/myblog_images/raw/master/array.jpg">
+<meta name="twitter:title" content="lessonNotes linked list">
+<meta name="twitter:description" content="数据结构">
+<meta name="twitter:image" content="http://pg3xi71cb.bkt.clouddn.com/linkedlist.jpg">
 
 
 
@@ -123,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/07/lessonNotes-Array/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/08/lessonNotes-linked-list/"/>
 
 
 
 
 
-  <title>极客时间 课程笔记之数组 | 胖达荣荣来也</title>
+  <title>lessonNotes linked list | 胖达荣荣来也</title>
   
 
 
@@ -266,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/07/lessonNotes-Array/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/08/lessonNotes-linked-list/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="pandaRongrong">
@@ -283,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">极客时间 课程笔记之数组</h1>
+          <h1 class="post-title" itemprop="name headline">lessonNotes linked list</h1>
         
 
         <div class="post-meta">
@@ -295,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-07T12:42:01+08:00">
-                2018-10-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-08T16:50:30+08:00">
+                2018-10-08
               </time>
             
 
@@ -306,39 +305,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/数据结构与算法分析/" itemprop="url" rel="index">
-                    <span itemprop="name">数据结构与算法分析</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/数据结构与算法分析/极客时间/" itemprop="url" rel="index">
-                    <span itemprop="name">极客时间</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -351,6 +317,10 @@
 
           
 
+          
+              <div class="post-description">
+                  数据结构
+              </div>
           
 
         </div>
@@ -366,87 +336,88 @@
       
 
       
-        <p></p><p class="description"></p><br>  数组作为最简单的数据结构，其在计算机中是使用连续的一段内存进行存储数据，根据下标随机访问元素非常方便，但为了保持保证连续性，删除、插入操作需要大量搬移数据，时间复杂度较高<br><img src="https://github.com/pandaRongrong/myblog_images/raw/master/array.jpg" alt="" style="width:100%"><p></p>
+        <p></p><p class="description"></p><br>与数组需要一块连续的内存空间不同，链表可以通过指针将一组零散的内存块串联起来，使得在插入、删除、随机访问等操作上复杂度与数组相反。课程主要介绍了三种主要的链表，单链表、循环链表、双向链表及实现它们时的具体建议<p></p>
+<p><img src="http://pg3xi71cb.bkt.clouddn.com/linkedlist.jpg" alt="" style="width:100%"></p>
 <a id="more"></a>
-<h2 id="为什么很多编程语言中数组都从0开始编号"><a href="#为什么很多编程语言中数组都从0开始编号" class="headerlink" title="为什么很多编程语言中数组都从0开始编号"></a>为什么很多编程语言中数组都从0开始编号</h2><h3 id="一-课程主要内容"><a href="#一-课程主要内容" class="headerlink" title="一. 课程主要内容"></a>一. 课程主要内容</h3><ol>
-<li><p>数组（Array）的定义：是一种<strong>线性表</strong>数据结构。它用一组<strong>连续的内存空间</strong>，来存储一组具有<strong>相同类型</strong>的数据。</p>
-<p><img src="https://github.com/pandaRongrong/myblog_images/raw/master/array.jpg" alt=""></p>
-<ul>
-<li>连续的内存空间和相同类型的数据，使得数组能够实现<strong>随机访问</strong>，但为了保证连续性，要在数组中删除、插入一个数据时需要大量搬移数据</li>
-<li><p><strong>计算机是通过地址来访问内存中的数据</strong>。数组中某元素存储的内存地址公式为：</p>
-<pre><code>a[i]_address=base_address+i*data_type_size
-</code></pre></li>
-<li><p>数组适合查找操作，但即使是排序好的数组，用二分查找，时间复杂度也是O（logn）,<strong>数组根据下标随机访问时间复杂度为O(1)</strong></p>
-</li>
+<h2 id="一、课程内容"><a href="#一、课程内容" class="headerlink" title="一、课程内容"></a>一、课程内容</h2><h3 id="1-单链表"><a href="#1-单链表" class="headerlink" title="1. 单链表"></a>1. 单链表</h3><ul>
+<li>链表的节点除了要存储数据之外，还要记录下一个节点地址，把这个记录下个结点地址的指针叫作后继指针next</li>
+<li>两个特殊的节点<ul>
+<li>头节点：用来记录链表的基地址，有了它，可以遍历整条链表</li>
+<li>尾节点：指针不是指向下一个结点，而是指向一个空地址NULL，表示这是链表的最后一个节点</li>
 </ul>
 </li>
-<li>数组的插入操作<ul>
-<li>若数组中的数据有序，则将一个数据插入长度为n数组的第k个位置，最坏时间复杂度为O(n),平均情况时间复杂度为（1+2+…+n）/n=O(n)</li>
-<li><strong>若数组中的数据无序,为了避免大规模的数据搬移，直接将第k位的数据搬移到数组元素的最后，把新的元素直接放入第k位置</strong></li>
+<li>链表的插入、删除结点操作时间复杂度为O(1),但要随机访问第k个元素，由于链表中的数据并非连续存储，无法像数组那样，根据首地址和下标，通过寻址公式能直接计算出对应的内存地址，而是根据指针一个结点一个结点依次遍历</li>
+</ul>
+<h3 id="2-循环链表"><a href="#2-循环链表" class="headerlink" title="2. 循环链表"></a>2. 循环链表</h3><ul>
+<li>跟单链表的唯一区别就在尾结点，循环链表的尾结点指针是指向链表的头结点</li>
+<li>优点：从链尾到链头比较方便，当要处理的数据具有环形结构特点时，特别适合采用循环链表，比如著名的<a href="https://en.wikipedia.org/wiki/Josephus_problem" target="_blank" rel="noopener">约瑟夫问题</a></li>
+</ul>
+<h3 id="3-双向链表"><a href="#3-双向链表" class="headerlink" title="3. 双向链表"></a>3. 双向链表</h3><ul>
+<li>每个结点不止有一个后继指针next指向后面的结点，还有一个前驱指针prev指向前面的结点</li>
+<li>相比单链表，双向链表支持O(1)时间复杂度情况下找到前驱结点，使在某些情况下插入、删除操作比单链表简单、高效<ul>
+<li>删除操作中，当删除给定指针指向的结点时，单链表不支持直接获取前驱结点只能从头节点开始遍历链表</li>
+<li>当在链表的某个指定结点前插入一个结点，双向链表比单链表有很大的优势</li>
+<li>对于一个有序链表，双向链表按值查询的效率更高，因为我们可以记录上次查找的位置p，每次查询时根据要查找的值与p的大小关系，决定是往前还是往后查找</li>
 </ul>
 </li>
-<li>数组的删除操作<ul>
-<li>一般情况时间复杂度分析同插入操作，<strong>当我们并不一定非得追求数组中数据的连续性时，每次的删除操作并不是真正搬移数据，只是记录数据已经被删除，当数组没有更多空间存储数据时，我们再触发执行一次真正的删除操作（JVM标记清除垃圾回收算法的核心算法）</strong></li>
+</ul>
+<h3 id="4-用空间换时间的设计思想"><a href="#4-用空间换时间的设计思想" class="headerlink" title="4. 用空间换时间的设计思想"></a>4. 用空间换时间的设计思想</h3><ul>
+<li>当内存空间充足时，如果我们更加追求代码的执行速度，可以选择空间复杂度相对较高、但时间复杂度相对较低的算法或数据结构</li>
+<li>如果内存比较紧缺，比如代码跑在手机或者单片机上，就可以反过来用时间换空间</li>
+<li>缓存的例子实际上就是利用空间换时间</li>
+</ul>
+<h3 id="5-链表-VS-数组"><a href="#5-链表-VS-数组" class="headerlink" title="5. 链表 VS 数组"></a>5. 链表 VS 数组</h3><ul>
+<li>数组和链表是两种截然不同的内存组织方式，它们插入、删除、随机访问操作的时间复杂度正好相反</li>
+<li>数组简单易用，在实现上使用的是连续的内存空间，可以借助CPU的缓存极致预读数组中的数据，访问效率高</li>
+<li>数组的缺点是大小固定，一经声明，声明过大导致系统没有足够连续内存空间分配，声明过小可能出现不够用，而动态数组虽然可以动态调整数组容量但需要<strong>数据拷贝操作，非常耗时</strong></li>
+</ul>
+<h3 id="6-缓存"><a href="#6-缓存" class="headerlink" title="6. 缓存"></a>6. 缓存</h3><ul>
+<li>如CPU缓存、数据库缓存、浏览器缓存</li>
+<li>缓存淘汰策略，先进先出策略FIFO、最少使用策略LFU、最近最少使用策略LRU</li>
+<li>基于链表实现LRU缓存淘汰算法<ul>
+<li>维护一个有序单链表，越靠近链表尾部的结点是越早之前访问的，当有一个新的数据被访问时，我们从链表头开始顺序遍历链表</li>
+<li>如果此数据已经被缓存在链表中，我们遍历得到这个数据对应的结点，将其从原来的位置删除，然后再插入到链表的头部</li>
+<li>如果此数据没有在缓存中，如果此时缓存未满，则将此结点直接插入到链表的头部，如果此时缓存已满，则删除链表尾结点，将新的数据结点插入链表的头部</li>
 </ul>
 </li>
-<li>数组越界<ul>
-<li>数组越界在C语言中没有规定数组访问越界时编译器应该如何处理，因为<strong>访问数组的本质就是访问一段连续内存</strong>，只要数组通过偏移计算得到的内存地址是可用的，那么程序就可能不会保任何错误</li>
+</ul>
+<h3 id="7-写链表代码技巧"><a href="#7-写链表代码技巧" class="headerlink" title="7. 写链表代码技巧"></a>7. 写链表代码技巧</h3><ul>
+<li>理解指针、引用的含义<ul>
+<li>将某个变量赋给指针，实际上就是将这个变量的地址赋值给指针，或者说，指针中存储了这个变量的内存地址，指向了这个变量，通过指针就能找到这个变量</li>
 </ul>
 </li>
-<li>容器与数组<ul>
-<li>容器的优势：可以将很多数组操作的细节封装起来，支持动态扩容，数组本身在定义的时候需要预先指定大小</li>
-<li>当数据大小事先知道，对数据操作非常简单，可以考虑用数组；当表示多维数组时，用数组会更加直观</li>
-<li><strong>对于业务开发，直接使用容器，如果做非常底层的开发，数组优于容器</strong></li>
+<li>警惕指针丢失和内存泄漏<ul>
+<li>插入结点时要注意操作顺序</li>
+<li>删除结点时要记得手动释放内存空间</li>
 </ul>
 </li>
-</ol>
-<ol start="6">
-<li><p>为什么大多数编程语言，数组要从0开始编写</p>
-<ul>
-<li><p>“下标”最确切的定义为“偏移”，如果数组从1开始计数，计算数组元素a[k]的内存地址变为：</p>
-<pre><code>a[k]_address=base_address+(k-1)*data_type_size
-</code></pre><p><strong>我们会发现后一个公式多了一次减法运算，对于CPU来说，就是多了一次减法指令，对于二维数组的寻址公式，下标为0优势更明显</strong></p>
-</li>
-<li>历史原因</li>
+<li>利用哨兵简化实现难度<ul>
+<li>如链表中，引入哨兵结点，无论链表是不是空，head指针都会一直指向这个哨兵结点，这种带哨兵结点的链表叫带头链表，这样插入第一个结点和插入其他结点，删除最后一个结点和删除其他结点都可以统一为相同的代码实现逻辑了</li>
 </ul>
 </li>
-</ol>
-<h3 id="二-课后思考题"><a href="#二-课后思考题" class="headerlink" title="二. 课后思考题"></a>二. 课后思考题</h3><ol start="7">
-<li><p>课程思考题（课后同学留言讨论）</p>
-<ol>
-<li>对JVM的标记清除垃圾回收算法的理解<blockquote>
-<p>杰杰：大多数主流虚拟机采用可达性分析算法来判断对象是否存活，在标记阶段，会遍历所有 GC ROOTS，将所有 GC ROOTS 可达的对象标记为存活。只有当标记工作完成后，清理工作才会开始。<br>不足：1.效率问题。标记和清理效率都不高，但是当知道只有少量垃圾产生时会很高效。2.空间问题。会产生不连续的内存空间碎片。</p>
+<li>重点留意边界条件处理<ul>
+<li>如果链表为空，代码是否能正常工作</li>
+<li>如果代码只包含一个结点时，代码是否能正常工作</li>
+<li>如果代码只包含两个结点时，代码是否能正常工作</li>
+<li>代码逻辑在处理头节点和尾节点的时候，代码是否能正常工作</li>
+</ul>
+</li>
+<li>举例画图，辅助思考</li>
+<li>多写多练，没有捷径，5个常见的链表操作<ul>
+<li>单链表的反转</li>
+<li>链表中环的检测</li>
+<li>两个有序链表合并</li>
+<li>删除链表倒数第n个结点</li>
+<li>求链表的中间结点</li>
+</ul>
+</li>
+</ul>
+<h2 id="二、课后思考题"><a href="#二、课后思考题" class="headerlink" title="二、课后思考题"></a>二、课后思考题</h2><h3 id="1-用数组实现LRU缓存淘汰算法"><a href="#1-用数组实现LRU缓存淘汰算法" class="headerlink" title="1. 用数组实现LRU缓存淘汰算法"></a>1. 用数组实现LRU缓存淘汰算法</h3><blockquote>
+<p>方式一：首位置保存最新访问数据，末尾位置优先清理<br>当访问的数据未存在于缓存的数组中时，直接将数据插入数组第一个元素位置，此时数组所有元素需要向后移动1个位置，时间复杂度为O(n)；当访问的数据存在于缓存的数组中时，查找到数据并将其插入数组的第一个位置，此时亦需移动数组元素，时间复杂度为O(n)。缓存用满时，则清理掉末尾的数据，时间复杂度为O(1)。</p>
 </blockquote>
-</li>
-<li><p>二位数组a[m][n]的内存寻址公式</p>
-<pre><code>a[i][j]_address=base_address+ (i*n+j)*data_type_size
-</code></pre></li>
-</ol>
-</li>
-<li><p>课后讨论问题</p>
-<ol>
-<li><p>对于下述代码，当数组越界时会导致无限循环</p>
-<pre><code>int main(int argc, char* argv[])
-{
-  int i = 0;
-  int arr[3] = {0};
-  for(; i&lt;=3; i++){
-    arr[i] = 0;
-    printf(&quot;hello world\n&quot;);
-  }
-return 0;
-}
-</code></pre><blockquote>
-<p>slvher: 函数体内的局部变量存在栈上，且是连续压栈。在Linux进程的内存布局中，栈区在高地址空间，从高向低增长。变量i和arr在相邻地址，且i比arr的地址大，所以arr越界正好访问到i。当然，前提是i和arr元素同类型，否则那段代码仍是未决行为.</p>
+<blockquote>
+<p>方式二：首位置优先清理，末尾位置保存最新访问数据<br>当访问的数据未存在于缓存的数组中时，直接将数据添加进数组作为当前最有一个元素时间复杂度为O(1)；当访问的数据存在于缓存的数组中时，查找到数据并将其插入当前数组最后一个元素的位置，此时亦需移动数组元素，时间复杂度为O(n)。缓存用满时，则清理掉数组首位置的元素，且剩余数组元素需整体前移一位，时间复杂度为O(n)。（优化：清理的时候可以考虑一次性清理一定数量，从而降低清理次数，提高性能。）<br>                                                          ——姜威</p>
 </blockquote>
-</li>
-</ol>
-</li>
-</ol>
-<p>参考：</p>
-<ol>
-<li><a href="https://time.geekbang.org/column/article/40961" target="_blank" rel="noopener">极客时间 &lt;&lt;数据结构与算法之美&gt;&gt; 王争</a></li>
-</ol>
 <hr>
 
       
@@ -465,11 +436,9 @@ return 0;
       
         <div class="post-tags">
           
-            <a href="/tags/array/" rel="tag"><i class="fa fa-tag"></i> array</a>
+            <a href="/tags/linkedList/" rel="tag"><i class="fa fa-tag"></i> linkedList</a>
           
-            <a href="/tags/data-structure/" rel="tag"><i class="fa fa-tag"></i> data structure</a>
-          
-            <a href="/tags/课程笔记/" rel="tag"><i class="fa fa-tag"></i> 课程笔记</a>
+            <a href="/tags/data-structure，极客时间/" rel="tag"><i class="fa fa-tag"></i> data structure，极客时间</a>
           
         </div>
       
@@ -482,8 +451,8 @@ return 0;
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/05/algorithm-complexity/" rel="next" title="极客时间 课程笔记之算法复杂度分析">
-                <i class="fa fa-chevron-left"></i> 极客时间 课程笔记之算法复杂度分析
+              <a href="/2018/10/07/lessonNotes-Array/" rel="next" title="极客时间 课程笔记之数组">
+                <i class="fa fa-chevron-left"></i> 极客时间 课程笔记之数组
               </a>
             
           </div>
@@ -491,10 +460,6 @@ return 0;
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/08/lessonNotes-linked-list/" rel="prev" title="lessonNotes linked list">
-                lessonNotes linked list <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -635,7 +600,7 @@ return 0;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么很多编程语言中数组都从0开始编号"><span class="nav-number">1.</span> <span class="nav-text">为什么很多编程语言中数组都从0开始编号</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-课程主要内容"><span class="nav-number">1.1.</span> <span class="nav-text">一. 课程主要内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二-课后思考题"><span class="nav-number">1.2.</span> <span class="nav-text">二. 课后思考题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、课程内容"><span class="nav-number">1.</span> <span class="nav-text">一、课程内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-单链表"><span class="nav-number">1.1.</span> <span class="nav-text">1. 单链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-循环链表"><span class="nav-number">1.2.</span> <span class="nav-text">2. 循环链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-双向链表"><span class="nav-number">1.3.</span> <span class="nav-text">3. 双向链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-用空间换时间的设计思想"><span class="nav-number">1.4.</span> <span class="nav-text">4. 用空间换时间的设计思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-链表-VS-数组"><span class="nav-number">1.5.</span> <span class="nav-text">5. 链表 VS 数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-缓存"><span class="nav-number">1.6.</span> <span class="nav-text">6. 缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-写链表代码技巧"><span class="nav-number">1.7.</span> <span class="nav-text">7. 写链表代码技巧</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、课后思考题"><span class="nav-number">2.</span> <span class="nav-text">二、课后思考题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-用数组实现LRU缓存淘汰算法"><span class="nav-number">2.1.</span> <span class="nav-text">1. 用数组实现LRU缓存淘汰算法</span></a></li></ol></li></ol></div>
             
 
           </div>
